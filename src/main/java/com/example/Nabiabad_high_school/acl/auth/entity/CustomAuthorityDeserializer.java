@@ -1,4 +1,4 @@
-package com.example.Nabiabad_high_school.acl.entity;
+package com.example.Nabiabad_high_school.acl.auth.entity;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
