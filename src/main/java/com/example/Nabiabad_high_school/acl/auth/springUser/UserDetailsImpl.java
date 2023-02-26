@@ -1,9 +1,9 @@
-package com.example.Nabiabad_high_school.acl.springUser;
+package com.example.Nabiabad_high_school.acl.auth.springUser;
 
-import com.example.Nabiabad_high_school.acl.entity.Authority;
-import com.example.Nabiabad_high_school.acl.entity.CustomAuthorityDeserializer;
-import com.example.Nabiabad_high_school.acl.entity.Role;
-import com.example.Nabiabad_high_school.acl.entity.User;
+import com.example.Nabiabad_high_school.acl.auth.entity.Authority;
+import com.example.Nabiabad_high_school.acl.auth.entity.CustomAuthorityDeserializer;
+import com.example.Nabiabad_high_school.acl.auth.entity.Role;
+import com.example.Nabiabad_high_school.acl.auth.entity.User;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

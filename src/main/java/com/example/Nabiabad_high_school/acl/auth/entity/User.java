@@ -1,4 +1,4 @@
-package com.example.Nabiabad_high_school.acl.entity;
+package com.example.Nabiabad_high_school.acl.auth.entity;
 
 import lombok.*;
 
@@ -27,6 +27,17 @@ public class User {
 
     @Column(unique = true)
     public String userCode;
+
+    public String getGroupUsername() {
+        return groupUsername;
+    }
+
+    public void setGroupUsername(String groupUsername) {
+        this.groupUsername = groupUsername;
+    }
+
+    private String groupUsername;
+
 
     private Boolean accountExpired;
 

@@ -1,4 +1,4 @@
-package com.example.Nabiabad_high_school.acl.entity;
+package com.example.Nabiabad_high_school.acl.auth.entity;
 
 import org.springframework.security.core.GrantedAuthority;
 

@@ -1,7 +1,7 @@
-package com.example.Nabiabad_high_school.acl.springUser;
+package com.example.Nabiabad_high_school.acl.auth.springUser;
 
-import com.example.Nabiabad_high_school.acl.entity.User;
-import com.example.Nabiabad_high_school.acl.repository.UserRepo;
+import com.example.Nabiabad_high_school.acl.auth.entity.User;
+import com.example.Nabiabad_high_school.acl.auth.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

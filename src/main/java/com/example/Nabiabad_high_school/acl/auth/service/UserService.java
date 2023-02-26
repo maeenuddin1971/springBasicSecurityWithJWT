@@ -1,14 +1,13 @@
-package com.example.Nabiabad_high_school.acl.service;
+package com.example.Nabiabad_high_school.acl.auth.service;
 
-import com.example.Nabiabad_high_school.acl.entity.User;
-import com.example.Nabiabad_high_school.acl.repository.UserRepo;
+import com.example.Nabiabad_high_school.acl.auth.entity.User;
+import com.example.Nabiabad_high_school.acl.auth.repository.UserRepo;
 import com.example.Nabiabad_high_school.exception.AlreadyExistsException;
 import net.bytebuddy.utility.RandomString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.UnsupportedEncodingException;
 
 @Service
 public class UserService {
@@ -61,6 +60,12 @@ public class UserService {
     private String getSiteURL(HttpServletRequest request) {
         String siteURL = request.getRequestURL().toString();
         return siteURL.replace(request.getServletPath(), "");
+    }
+
+    //getting user by username
+    public User getUserByUsername(String username) {
+        User user = userRepo.findByUserName(username);
+        return user;
     }
 
 }

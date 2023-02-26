@@ -1,6 +1,6 @@
-package com.example.Nabiabad_high_school.acl.repository;
+package com.example.Nabiabad_high_school.acl.auth.repository;
 
-import com.example.Nabiabad_high_school.acl.entity.Role;
+import com.example.Nabiabad_high_school.acl.auth.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
